@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*css header*/
+    .navbar {
+        width: 100%;
+    }
+    
+
+    header { 
+        background-color: whitesmoke;
+        opacity: .9;
+        position: sticky;
+        top: 0;
+    }
+
+    header img { 
+        width: 170px;
+    }
+
+/*css carrusel*/
+    @media (min-width: 900px) {
+    #carouselExample {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .carousel-item img {
+        height: 600px;
+    }
+    }
+
+/*css color body general*/
+    body {
+        background-color:white;
+    }
+
+/*css sobre mi*/
+    main {
+        margin: 50px 0;
+    }
+    
+  
+  
+
+    h1 {
+        text-align: center;
+        margin: 2% 0;
+    }
+
+ /*css servicios*/
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        /*CONSULTAR SI ES LA FORMA CORRECTA*/
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.descripciones {
+    margin: 0 auto;
+}
+
+
+/*css footer*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: whitesmoke
+    }
+
+    .icono-redes {
+        width: 40px;
+    }
+
+
+
+
