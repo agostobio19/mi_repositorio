@@ -13,7 +13,14 @@
     
     <!--CSS PROPIO-->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Trabajemosjuntos</title>
+
+    
+     <!--ETIQUETAS SEO-->
+     <meta name="description" content="¡Ponete en contacto conmigo! Rellena el formulario y trabajemos juntos en tu proyecto de diseño" >
+     <meta name="keywords" content="AgostinaTobio, contacto, formulario, trabajo, telefono">
+
+
+    <title>Agostina Tobio | Contacto</title>
 </head>
 <body>
     <header>
@@ -41,7 +48,7 @@
                     <a class="nav-link active" href="experiencia.html">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active href="trabajemosjuntos.html">Trabajemos juntos</a>
+                    <a class="nav-link active" href= "trabajemosjuntos.html" >Trabajemos juntos</a>
                   </li>
                
                 </ul>
@@ -54,45 +61,49 @@
         <h1>Trabajemos juntos</h1> 
      
           <!--FORMULARIO-->
-        <form>
-            <div>
-                <label for="nombre-apellido">Nombre y apellido</label>
-            <input type="text" id="nombre-apellido" required placeholder="Ingresa tu nombre completo">
-            </div>
-    
-            <div>
-                <label for="celular">Celular</label>
-                <input type="tel" id="celular" required placeholder="Ingresa tu número">
-            </div>
+          <form>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+          </div>
 
-            <div>
-                <label for="mail">Mail</label>
-                <input type="email" id="mail" required placeholder="Ingresa tu correo">
-            </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Celular</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Cod de área + número">
+          </div>
 
-            <div>
-                <label for="mensaje">¡Contame tu idea!</label>
-                <textarea id="mensaje" cols="30" rows="10" required placeholder="Ingresa tu idea"></textarea>
-            </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
 
-            <div>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
-            </div>
 
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¡Contame tu idea!" rows="3"></textarea>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
 
         </form>
-    </main>
+    
+        </main>
 
     <footer>
+      <div class="iconos">
         <a href="https://www.behance.net/agostobio83df" target="_blank">
-            <img src="../img/behance.png" alt="logo behance" class="icono-redes">
-        </a>
+            <img src="../img/behance.png" alt="logo behance" class="redes"> </a>
 
         <a href="https://wa.link/3s35sh" target="_blank">
-        <img src="../img/whatsapp.png" alt="logo whatsapp" class="icono-redes">
-    </a>
-        <p>Agostina Tobio &copy Puerto Madryn, Chubut - Argentina</p>
+        <img src="../img/whatsapp.png" alt="logo whatsapp" class="redes"></a>
+
+        <a href="mailto:agostobio2022@gmail.com?subject=%C2%A1Quiero%20un%20dise%C3%B1o!&body=Hola%20Agostina!%20Te%20contecto%20desde%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20contratar%20tus%20servicios%20de%20dise%C3%B1o%20gr%C3%A1fico.%0A%0AMi%20nombre%20es........%20%0A%0A%C2%A1Muchas%20gracias!" target="_blank">
+          <img src="../img/email.png" alt="logo correo" class="redes"></a>
+  </div>
+        <p> Agostina Tobio &copy Puerto Madryn, Chubut - Argentina</p>
     </footer>
 
     <!--SCRIPT BOOTSTRAP-->

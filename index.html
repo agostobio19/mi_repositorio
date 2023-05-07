@@ -7,14 +7,24 @@
     
     <!--FAVICON-->
     <link rel="shortcut icon" href="./img/favicon.png">
-    
-    
+
+  
+  <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!--LINK BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!--CSS PROPIO-->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Inicio</title>
+
+    <!--ETIQUETAS SEO-->
+    <meta name="description" content="¡Hola! Soy Agostina. Te doy la bienvenida a mi Sitio Web de Diseño Gráfico donde podes saber un poco sobre mi, ver proyectos, experiencias laborales y contactarme para trabajar juntos. ¡Te espero!">
+    <meta name="keywords" content="AgostinaTobio, diseñografico, logo, diseño, identidadvisual, marca, inicio, biendenido, bienvenida">
+   
+   
+    <title>Agostina Tobio | Inicio</title>
 </head>
 
 <body>
@@ -86,46 +96,50 @@
   
       <!--SOBRE MI-->
     <main>
-        <div class="padre-sobre-mi row">
+        <div class="presentacion">
        
           <!--foto-->
-          <div class="sobre-mi col-12 col-md-3 col-lg-3">
-
-        <!--ROGER: Me trabe aca, no logro como hacer para que la imagen me quede mas chica y queden en alineados los 3 elementos uno al lado del otro en la version de escritorio. Foto, texto y spotify. Me serviria una ayuda-->
-       <img src="img/agostina tobio 2023.jpg" alt="foto agostina tobio">
-      </div>
-       
+       <img data-aos="zoom-in-right" src="img/agostina tobio 2023.jpg" alt="foto agostina tobio" class="mifoto">
+     
+   
+      <div data-aos="zoom-in-up" class="mitexto">
        <!--titulo--> 
-       <div class="sobre-mi col-12 col-md-3 col-lg-3">
-       <h1> Sobre mí</h1>
+         <h1> Sobre mí</h1>
        <!--texto--> 
-        <p> Mi nombre es Agostina, tengo 25 años y actualmente resido en la ciudad de Puerto Madryn (Chubut) Argentina. 
-            Soy Licenciada en Diseño Gráfico, llevo 6 años trabajando en el rubro y 4 de ellos dedicándome al diseño para medios digitales.
-            Soy proactiva, sociable y me encanta trabajar en equipo.
-            ¡Busco desafíos profesionales que me inspiren a crecer y aprender!</p>
-
-          </div>
+        <p> Soy <strong>Licenciada en Diseño Gráfico </strong>, llevo 6 años trabajando en el rubro y 4 de ellos dedicándome al <strong> diseño para medios digitales.</strong>
+            Soy proactiva, sociable y me encanta trabajar en equipo. ¡Busco desafíos profesionales que me inspiren a crecer y aprender!</p>
+         </div>
 
       <!--spotify-->
-      <div class="sobre-mi col-12 col-md-3 col-lg-3">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2K6QTldAHBRFk3c6BHWYr5?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-      
+        <iframe data-aos="zoom-out-left" style="border-radius:12px" src="https://open.spotify.com/embed/track/2K6QTldAHBRFk3c6BHWYr5?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  
+    
     </div>
+ 
+ 
+    <!--BUSCAR COMO INSERTAR SLIDE DE TEXTO-->
+
     </main>
 
-     <!--BUSCAR COMO INSERTAR SLIDE DE TEXTO-->
 
      <footer>
+      <div class="iconos">
         <a href="https://www.behance.net/agostobio83df" target="_blank">
-            <img src="img/behance.png" alt="logo behance" class="icono-redes">
-        </a>
+            <img src="./img/behance.png" alt="logo behance" class="redes"> </a>
 
         <a href="https://wa.link/3s35sh" target="_blank">
-        <img src="img/whatsapp.png" alt="logo whatsapp" class="icono-redes">
-    </a>
+        <img src="./img/whatsapp.png" alt="logo whatsapp" class="redes"></a>
+
+        <a href="mailto:agostobio2022@gmail.com?subject=%C2%A1Quiero%20un%20dise%C3%B1o!&body=Hola%20Agostina!%20Te%20contecto%20desde%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20contratar%20tus%20servicios%20de%20dise%C3%B1o%20gr%C3%A1fico.%0A%0AMi%20nombre%20es........%20%0A%0A%C2%A1Muchas%20gracias!" target="_blank">
+          <img src="./img/email.png" alt="logo correo" class="redes"></a>
+  </div>
         <p> Agostina Tobio &copy Puerto Madryn, Chubut - Argentina</p>
     </footer>
+
+    <!--SCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+
 
     <!--SCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
