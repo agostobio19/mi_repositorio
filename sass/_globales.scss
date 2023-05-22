@@ -48,5 +48,8 @@ p {
 footer {
     margin-top: $espacio-grande;
     @include flex-columna; 
-    
+
+    .iconos a {
+        font-size: $icono-chico;
+    }
 }
