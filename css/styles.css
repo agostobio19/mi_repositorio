@@ -1,17 +1,61 @@
-/* Error: expected ";".
- *    ,
- * 49 |     position: sticky top: 0;
- *    |                         ^
- *    '
- *   scss\styles.scss 49:22  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 49 \2502      position: sticky top: 0;\d\a    \2502                          ^\a    \2575 \a   scss\\styles.scss 49:22  root stylesheet';
+@charset "UTF-8";
+/*Paleta de colores*/
+/*Tamaños de fuentes e iconos*/
+/*Resoluciones de pantalla*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente principal*/
+/*MIXINS*/
+body {
+  font-family: Poppins;
+  background-color: white;
+  color: black;
 }
+
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: whitesmoke;
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: rgb(223, 217, 217);
+}
+
+.navbar-toggler {
+  background-color: rgb(223, 217, 217);
+}
+
+.carousel-item img {
+  height: 600px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.mitexto {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

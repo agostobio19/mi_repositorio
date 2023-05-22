@@ -1,0 +1,41 @@
+/*Paleta de colores*/
+$color-primario: rgb(223, 217, 217);
+$color-secundario: whitesmoke;
+$color-terciario: white;
+$color-fuente: black;
+
+
+/*Tamaños de fuentes e iconos*/
+$fuente-extrachica: 14px;
+$fuente-chica: 16px;
+$fuente-media: 20px;
+$icono-chico: 40px;
+$icono-grande: 60px;
+
+/*Resoluciones de pantalla*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px; 
+
+/*Separaciones (margenes y paddings)*/
+$espacio-extrachico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+
+/*Fuente principal*/
+$fuente-principal: Poppins;
+
+/*MIXINS*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

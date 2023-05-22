@@ -1,0 +1,52 @@
+body { 
+    font-family: $fuente-principal;
+    background-color: $color-terciario;
+    color: $color-fuente
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+    color: $color-secundario;
+&:hover {
+        color: $color-primario;
+    }
+}
+
+.navbar-toggler {
+    background-color: $color-primario;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+@media (min-width:$desktop) {
+    .carousel-item img {
+        height: 80vh;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+p {
+    font-size: $fuente-chica;
+}
+
+.mitexto {
+    margin-top: $espacio-chico;
+}
+
+footer {
+    margin-top: $espacio-grande;
+    @include flex-columna; 
+    
+}
