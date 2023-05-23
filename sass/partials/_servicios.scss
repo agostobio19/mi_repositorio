@@ -1,0 +1,35 @@
+@import "variables";
+@import "globales";
+
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.card:hover {
+ transform: scale(1.05,1.05);
+}
+
+@media (min-width: 768px) {
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: 992px) {
+.servicios {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.descripciones {
+margin: 0 auto;
+}

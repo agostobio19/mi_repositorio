@@ -1,4 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/*css header*/
+    .navbar {
+        width: 100%;
+    }
+    
+    .nav-item:hover  {
+        background-color: rgb(223, 217, 217);
+    }
+   
+.nav-item a:hover  {
+     font-weight: 500;
+     color:#424242
+    }
+
+    header { 
+        background-color: whitesmoke;
+        opacity: .9;
+        position: sticky;
+        top: 0;
+    }
+
+    header img { 
+        width: 170px;
+    }
+
+/*css carrusel*/
+    @media (min-width: 900px) {
+    #carouselExample {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .carousel-item img {
+        height: 600px;
+    }
+    }
+
+/*css color body general*/
+    body {
+        background-color:white;
+        font-family: poppins;
+    }
+
+    h1 {
+        font-weight: 700;   
+    }
+
+/*css sobre mi*/
+
+.presentacion {
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 20px;
+}
+
+.mifoto {
+    width: 250px;
+    height: 200px;
+}
+
+.mitexto {
+    font-size: 16px
+}
+
+h1 {
+    text-align: center;
+    margin: 2% 0;
+}
+
+    h1 {
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: inherit;
+    }
+
+   @keyframes aparecer  {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .presentacion {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+    }
+    
+
+ /*css servicios*/
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .card:hover {
+     transform: scale(1.05,1.05);
+    }
+  
+    @media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.descripciones {
+    margin: 0 auto;
+}
+
+/*css formulario*/
+
+form {
+    padding: 50px
+}
+
+.btn {
+    background-color: rgb(240, 139, 194);
+}
+    
+
+
+
+
+
+/* css experiencia laboral  */
+.timeline-section{
+	min-height: 100vh;
+	padding: 10px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #7e7e7e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #c0c0c0;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+    font-weight: 400;
+	color: #000000;
+	margin:6px 0 15px;
+}
+
+.timeline-content1{
+    background-color: #BE6DB7;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content2{
+    background-color: #ff6d60;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content3{
+    background-color: #a6d0dd;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content4{
+    background-color: #C3FF99;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content5{
+    background-color: #F6BA6F;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content6{
+    background-color: #FF8DC7;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #ffffff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+/*css footer*/
+    .iconos {
+    display: flex;
+    gap:5px;
+    }
+    .redes {
+        width: 40px;
+    }
     footer {
         display: flex;
         flex-direction: column;
