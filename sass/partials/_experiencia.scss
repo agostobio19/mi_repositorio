@@ -13,7 +13,6 @@
 	position: relative;
 }
 .timeline-items::before{
-	content: '';
 	position: absolute;
 	width: 2px;
 	height: 100%;
@@ -101,7 +100,7 @@
 }
 
 
-@media(max-width: 767px){
+@media(min-width: $tablet){
 	.timeline-items::before{
 		left: 7px;
 	}
